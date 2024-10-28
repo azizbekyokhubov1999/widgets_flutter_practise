@@ -24,7 +24,7 @@ class ImageSize extends StatelessWidget {
               ),
               CircleAvatar(
                 radius: 100,
-                backgroundImage: AssetImage(""
+                backgroundImage: AssetImage(
                     "assets/images/lm10.jpg"
                 ),
               ),
