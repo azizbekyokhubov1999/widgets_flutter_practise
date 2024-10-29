@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_flutter_practise/pages/bottom_nav_bar.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/data_table.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
@@ -25,10 +26,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Widgets',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyDropDownButton()
+      home: BottomNavBar()
     );
   }
 }
