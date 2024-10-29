@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/data_table.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
+import 'package:widgets_flutter_practise/pages/dropdown_button.dart';
 import 'package:widgets_flutter_practise/pages/home_page.dart';
 import 'package:widgets_flutter_practise/pages/image_size.dart';
 import 'package:widgets_flutter_practise/pages/my_buttons.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyRichText()
+      home: MyDropDownButton()
     );
   }
 }
