@@ -6,6 +6,7 @@ import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
 import 'package:widgets_flutter_practise/pages/dropdown_button.dart';
 import 'package:widgets_flutter_practise/pages/home_page.dart';
 import 'package:widgets_flutter_practise/pages/image_size.dart';
+import 'package:widgets_flutter_practise/pages/image_slider.dart';
 import 'package:widgets_flutter_practise/pages/my_buttons.dart';
 import 'package:widgets_flutter_practise/pages/page_1.dart';
 import 'package:widgets_flutter_practise/pages/rich_text.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MySllidableWidget()
+      home: MyImageSlider()
     );
   }
 }
