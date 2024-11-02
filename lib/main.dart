@@ -23,6 +23,7 @@ import 'package:widgets_flutter_practise/pages/switch_button.dart';
 import 'package:widgets_flutter_practise/pages/tab_bar.dart';
 import 'package:widgets_flutter_practise/pages/text_field.dart';
 import 'package:widgets_flutter_practise/pages/tool_tip.dart';
+import 'package:widgets_flutter_practise/pages/valume_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,9 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyCard(
-
-      )
+      home: MyVolumeSlider()
     );
   }
 }
