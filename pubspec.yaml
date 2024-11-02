@@ -38,6 +38,7 @@ dependencies:
   flutter_slidable: ^3.1.1
   another_carousel_pro: ^1.0.2
   slide_to_act: ^2.0.2
+  readmore: ^3.0.0
 
 dev_dependencies:
   flutter_test:

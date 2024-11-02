@@ -10,6 +10,7 @@ import 'package:widgets_flutter_practise/pages/image_size.dart';
 import 'package:widgets_flutter_practise/pages/image_slider.dart';
 import 'package:widgets_flutter_practise/pages/my_buttons.dart';
 import 'package:widgets_flutter_practise/pages/page_1.dart';
+import 'package:widgets_flutter_practise/pages/radmore_text.dart';
 import 'package:widgets_flutter_practise/pages/rich_text.dart';
 import 'package:widgets_flutter_practise/pages/scroll_bar.dart';
 import 'package:widgets_flutter_practise/pages/slidable_widget.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MySlideToAct()
+      home: MyReadMoreText()
     );
   }
 }
