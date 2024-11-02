@@ -15,6 +15,7 @@ import 'package:widgets_flutter_practise/pages/rich_text.dart';
 import 'package:widgets_flutter_practise/pages/scroll_bar.dart';
 import 'package:widgets_flutter_practise/pages/slidable_widget.dart';
 import 'package:widgets_flutter_practise/pages/slide_to_act.dart';
+import 'package:widgets_flutter_practise/pages/sliver_app_bar.dart';
 import 'package:widgets_flutter_practise/pages/snacbar_widget.dart';
 import 'package:widgets_flutter_practise/pages/stepper.dart';
 import 'package:widgets_flutter_practise/pages/text_field.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyReadMoreText()
+      home: MySliverAppBar()
     );
   }
 }
