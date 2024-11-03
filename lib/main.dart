@@ -24,6 +24,7 @@ import 'package:widgets_flutter_practise/pages/stepper.dart';
 import 'package:widgets_flutter_practise/pages/switch_button.dart';
 import 'package:widgets_flutter_practise/pages/tab_bar.dart';
 import 'package:widgets_flutter_practise/pages/text_field.dart';
+import 'package:widgets_flutter_practise/pages/time_picker.dart';
 import 'package:widgets_flutter_practise/pages/tool_tip.dart';
 import 'package:widgets_flutter_practise/pages/valume_slider.dart';
 
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyPercentIndicator()
+      home: MyTime()
     );
   }
 }
