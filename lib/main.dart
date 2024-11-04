@@ -23,6 +23,7 @@ import 'package:widgets_flutter_practise/pages/slidable_widget.dart';
 import 'package:widgets_flutter_practise/pages/slide_to_act.dart';
 import 'package:widgets_flutter_practise/pages/sliver_app_bar.dart';
 import 'package:widgets_flutter_practise/pages/snacbar_widget.dart';
+import 'package:widgets_flutter_practise/pages/splash_screen.dart';
 import 'package:widgets_flutter_practise/pages/stepper.dart';
 import 'package:widgets_flutter_practise/pages/switch_button.dart';
 import 'package:widgets_flutter_practise/pages/tab_bar.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyCountryPicker()
+      home: MySplashScreen()
     );
   }
 }
