@@ -3,6 +3,7 @@ import 'package:widgets_flutter_practise/pages/bottom_nav_bar.dart';
 import 'package:widgets_flutter_practise/pages/card_widget.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/choice_chip.dart';
+import 'package:widgets_flutter_practise/pages/curved_bnb.dart';
 import 'package:widgets_flutter_practise/pages/data_table.dart';
 import 'package:widgets_flutter_practise/pages/date_picker.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyDatePicker()
+      home: MyCurvedBNB()
     );
   }
 }
