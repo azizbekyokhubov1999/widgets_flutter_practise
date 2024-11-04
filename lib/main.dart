@@ -4,6 +4,7 @@ import 'package:widgets_flutter_practise/pages/card_widget.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/choice_chip.dart';
 import 'package:widgets_flutter_practise/pages/data_table.dart';
+import 'package:widgets_flutter_practise/pages/date_picker.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
 import 'package:widgets_flutter_practise/pages/dropdown_button.dart';
 import 'package:widgets_flutter_practise/pages/home_page.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyTime()
+      home: MyDatePicker()
     );
   }
 }
