@@ -43,6 +43,7 @@ dependencies:
   percent_indicator: ^4.2.3
   curved_navigation_bar: ^1.0.6
   country_picker: ^2.0.26
+  fl_chart: ^0.69.0
 
 dev_dependencies:
   flutter_test:
