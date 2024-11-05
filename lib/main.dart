@@ -20,6 +20,7 @@ import 'package:widgets_flutter_practise/pages/radmore_text.dart';
 import 'package:widgets_flutter_practise/pages/refresh_indicator.dart';
 import 'package:widgets_flutter_practise/pages/rich_text.dart';
 import 'package:widgets_flutter_practise/pages/scroll_bar.dart';
+import 'package:widgets_flutter_practise/pages/search_bar.dart';
 import 'package:widgets_flutter_practise/pages/slidable_widget.dart';
 import 'package:widgets_flutter_practise/pages/slide_to_act.dart';
 import 'package:widgets_flutter_practise/pages/sliver_app_bar.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyChart()
+      home: MySearchBar()
     );
   }
 }
