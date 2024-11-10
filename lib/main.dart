@@ -13,6 +13,7 @@ import 'package:widgets_flutter_practise/pages/home_page.dart';
 import 'package:widgets_flutter_practise/pages/image_size.dart';
 import 'package:widgets_flutter_practise/pages/image_slider.dart';
 import 'package:widgets_flutter_practise/pages/my_buttons.dart';
+import 'package:widgets_flutter_practise/pages/my_popup_menu.dart';
 import 'package:widgets_flutter_practise/pages/page_1.dart';
 import 'package:widgets_flutter_practise/pages/percent_indicator.dart';
 import 'package:widgets_flutter_practise/pages/pi_chart.dart';
@@ -49,7 +50,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MySearchBar()
+      home: Scaffold(
+        body: Center(
+          child: MyPopupButton(),
+        ),
+      )
+
     );
   }
 }
