@@ -5,6 +5,7 @@ import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/choice_chip.dart';
 import 'package:widgets_flutter_practise/pages/country_picker.dart';
 import 'package:widgets_flutter_practise/pages/curved_bnb.dart';
+import 'package:widgets_flutter_practise/pages/dark&light_mode.dart';
 import 'package:widgets_flutter_practise/pages/data_table.dart';
 import 'package:widgets_flutter_practise/pages/date_picker.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
@@ -50,10 +51,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Widgets',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: MyGaugeChart()
+      // theme: ThemeData(
+      //   useMaterial3: true,
+      // ),
+      home: MyDarkLightMode()
     );
   }
 }
