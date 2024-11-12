@@ -46,6 +46,7 @@ dependencies:
   fl_chart: ^0.69.0
   popover: ^0.3.1
   syncfusion_flutter_gauges: ^27.1.58
+  table_calendar: ^3.1.2
 
 dev_dependencies:
   flutter_test:

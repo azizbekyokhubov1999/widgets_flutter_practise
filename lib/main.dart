@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_flutter_practise/pages/bottom_nav_bar.dart';
+import 'package:widgets_flutter_practise/pages/calendar_table.dart';
 import 'package:widgets_flutter_practise/pages/card_widget.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
 import 'package:widgets_flutter_practise/pages/choice_chip.dart';
@@ -51,10 +52,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Widgets',
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData(
-      //   useMaterial3: true,
-      // ),
-      home: MyDarkLightMode()
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      home: MyCalendarTable()
     );
   }
 }
