@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_flutter_practise/pages/animated_container.dart';
+import 'package:widgets_flutter_practise/pages/animated_icon.dart';
 import 'package:widgets_flutter_practise/pages/bottom_nav_bar.dart';
 import 'package:widgets_flutter_practise/pages/calendar_table.dart';
 import 'package:widgets_flutter_practise/pages/card_widget.dart';
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyAnimatedContainer()
+      home: MyAnimatedIcon()
     );
   }
 }
