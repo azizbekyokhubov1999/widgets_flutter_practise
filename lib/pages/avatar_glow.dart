@@ -23,7 +23,6 @@ class _MyAvatarGlowState extends State<MyAvatarGlow> {
             size: 70,
               color: Colors.red,
             ),
-
         ),
       ),
     );
