@@ -42,7 +42,7 @@ class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
       body: Center(
         child: AnimatedContainer(
             duration: Duration(seconds: 1),
-          curve: Curves.fastEaseInToSlowEaseOut ,
+          curve: Curves.fastEaseInToSlowEaseOut,
           width: boxWidth,
           height: boxHeight,
           decoration: BoxDecoration(
