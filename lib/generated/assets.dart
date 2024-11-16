@@ -2,7 +2,12 @@
 class Assets {
   Assets._();
 
+  static const String assetsImagesImage1 = 'assets/images/image1.webp';
   static const String imagesCr7 = 'assets/images/cr7.jpg';
+  static const String imagesImage1 = 'assets/images/image1.avif';
+  static const String imagesImage2 = 'assets/images/image2.jpg';
+  static const String imagesImage3jpg = 'assets/images/image3jpg.jpg';
+  static const String imagesImage4 = 'assets/images/image4.webp';
   static const String imagesLm10 = 'assets/images/lm10.jpg';
   static const String imagesLogopng = 'assets/images/logopng.png';
   static const String imagesNature1 = 'assets/images/nature1.jpg';

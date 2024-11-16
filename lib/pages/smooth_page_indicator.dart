@@ -32,14 +32,12 @@ class MySmoothPageIndicator extends StatelessWidget {
           SmoothPageIndicator(
               controller: _controller,
               count: 4,
-            effect: JumpingDotEffect(
+            effect: ExpandingDotsEffect(
               dotColor: Colors.red.shade200,
               dotHeight: 30,
               dotWidth: 30,
               activeDotColor: Colors.red.shade400,
               spacing: 15,
-              verticalOffset: 20,
-              jumpScale: 5
             ),
           )
         ],
