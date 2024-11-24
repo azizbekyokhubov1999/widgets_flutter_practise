@@ -28,6 +28,7 @@ import 'package:widgets_flutter_practise/pages/page_1.dart';
 import 'package:widgets_flutter_practise/pages/page_view.dart';
 import 'package:widgets_flutter_practise/pages/percent_indicator.dart';
 import 'package:widgets_flutter_practise/pages/pi_chart.dart';
+import 'package:widgets_flutter_practise/pages/qr_code_reader.dart';
 import 'package:widgets_flutter_practise/pages/radmore_text.dart';
 import 'package:widgets_flutter_practise/pages/refresh_indicator.dart';
 import 'package:widgets_flutter_practise/pages/rich_text.dart';
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyOnBoardingScreen()
+      home: MyQrCodeReader()
     );
   }
 }

@@ -34,32 +34,56 @@ class _MyOnBoardingScreenState extends State<MyOnBoardingScreen> {
           },
           controller: controller,
           children: [
-            //for page 1
+            // //for page 1
             // Container(
             //   color: Colors.red,
             //   child: Center(
-            //     child: Text("Page 1"),
+            //     child: Text("Page 1",
+            //     style: TextStyle(
+            //       color: Colors.black,
+            //       fontSize: 40,
+            //       fontWeight: FontWeight.bold
+            //     ),
+            //     ),
             //   ),
             // ),
             // //for page 2
             // Container(
             //   color: Colors.blue,
             //   child: Center(
-            //     child: Text("Page 2"),
+            //     child: Text("Page 2",
+            //       style: TextStyle(
+            //           color: Colors.black,
+            //           fontSize: 40,
+            //           fontWeight: FontWeight.bold
+            //       ),
+            //     ),
             //   ),
             // ),
             // //for page 3
             // Container(
             //   color: Colors.green,
             //   child: Center(
-            //     child: Text("Page 3"),
+            //     child: Text("Page 3",
+            //       style: TextStyle(
+            //           color: Colors.black,
+            //           fontSize: 40,
+            //           fontWeight: FontWeight.bold
+            //       ),
+            //     ),
             //   ),
             // ),
             // //for page 4
             // Container(
             //   color: Colors.yellow,
             //   child: Center(
-            //     child: Text("Page 4"),
+            //     child: Text("Page 4",
+            //       style: TextStyle(
+            //           color: Colors.black,
+            //           fontSize: 40,
+            //           fontWeight: FontWeight.bold
+            //       ),
+            //     ),
             //   ),
             // ),
 
