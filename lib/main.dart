@@ -33,6 +33,7 @@ import 'package:widgets_flutter_practise/pages/page_view.dart';
 import 'package:widgets_flutter_practise/pages/percent_indicator.dart';
 import 'package:widgets_flutter_practise/pages/pi_chart.dart';
 import 'package:widgets_flutter_practise/pages/qr_code_reader.dart';
+import 'package:widgets_flutter_practise/pages/radio_button.dart';
 import 'package:widgets_flutter_practise/pages/radmore_text.dart';
 import 'package:widgets_flutter_practise/pages/refresh_indicator.dart';
 import 'package:widgets_flutter_practise/pages/rich_text.dart';
@@ -52,54 +53,58 @@ import 'package:widgets_flutter_practise/pages/time_picker.dart';
 import 'package:widgets_flutter_practise/pages/tool_tip.dart';
 import 'package:widgets_flutter_practise/pages/valume_slider.dart';
 
-Future main() async{
-  WidgetsFlutterBinding.ensureInitialized();
-  final prefs = await SharedPreferences.getInstance();
-  final showHome = prefs.getBool("showHome") ?? false;
-  runApp( MyApp(
-    showHome: showHome,
-  ));
-}
+//for onboarding example
 
-class MyApp extends StatelessWidget {
-
-  final bool showHome;
-
-  const MyApp({
-    super.key,
-    required this.showHome,
-});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: showHome?  OnboardingHomePage() : MyOnBoardingScreen()
-    );
-  }
-}
-
-// void main(){
-//   runApp(const MyApp());
+// Future main() async{
+//   WidgetsFlutterBinding.ensureInitialized();
+//   final prefs = await SharedPreferences.getInstance();
+//   final showHome = prefs.getBool("showHome") ?? false;
+//   runApp( MyApp(
+//     showHome: showHome,
+//   ));
 // }
 //
 // class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
+//
+//   final bool showHome;
+//
+//   const MyApp({
+//     super.key,
+//     required this.showHome,
+// });
 //
 //   @override
 //   Widget build(BuildContext context) {
 //     return MaterialApp(
-//       title: "Flutter Widgets",
+//       title: 'Flutter Widgets',
 //       debugShowCheckedModeBanner: false,
 //       theme: ThemeData(
-//         useMaterial3: true
+//         useMaterial3: true,
 //       ),
-//       home: MyHeroAnimation(),
+//       home: showHome?  OnboardingHomePage() : MyOnBoardingScreen()
 //     );
 //   }
 // }
+
+//for onboarding example
+
+void main(){
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Flutter Widgets",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true
+      ),
+      home: MyRadioBtnPage(),
+    );
+  }
+}
 
