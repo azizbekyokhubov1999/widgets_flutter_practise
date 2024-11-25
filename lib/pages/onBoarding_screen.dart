@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'o_image_container.dart';
+import 'onboarding_home.dart';
 
 class MyOnBoardingScreen extends StatefulWidget {
   const MyOnBoardingScreen({super.key});
@@ -128,7 +130,12 @@ class _MyOnBoardingScreenState extends State<MyOnBoardingScreen> {
                 backgroundColor: Colors.deepPurple,
                 minimumSize: Size.fromHeight(70),
               ),
-                onPressed: (){},
+                onPressed: () async{
+                final prefs = await SharedPreferences.getInstance();
+                prefs.setBool("showHome", true);
+
+                Navigator.push(context, MaterialPageRoute(builder: (context) => OnboardingHomePage()));
+                },
                 child: Text(
                   "Get Started",
                   style: TextStyle(
@@ -159,7 +166,7 @@ class _MyOnBoardingScreenState extends State<MyOnBoardingScreen> {
             Center(
               child: SmoothPageIndicator(
                   controller: controller,
-                  count: 4,
+                  count: 3,
                 onDotClicked: (index){
                     controller.animateToPage(
                         index,

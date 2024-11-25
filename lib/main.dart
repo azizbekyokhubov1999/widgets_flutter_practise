@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:widgets_flutter_practise/pages/animated_container.dart';
 import 'package:widgets_flutter_practise/pages/animated_icon.dart';
 import 'package:widgets_flutter_practise/pages/avatar_glow.dart';
@@ -26,6 +27,7 @@ import 'package:widgets_flutter_practise/pages/my_buttons.dart';
 import 'package:widgets_flutter_practise/pages/my_popup_menu.dart';
 import 'package:widgets_flutter_practise/pages/neuporphism.dart';
 import 'package:widgets_flutter_practise/pages/onBoarding_screen.dart';
+import 'package:widgets_flutter_practise/pages/onboarding_home.dart';
 import 'package:widgets_flutter_practise/pages/page_1.dart';
 import 'package:widgets_flutter_practise/pages/page_view.dart';
 import 'package:widgets_flutter_practise/pages/percent_indicator.dart';
@@ -50,12 +52,23 @@ import 'package:widgets_flutter_practise/pages/time_picker.dart';
 import 'package:widgets_flutter_practise/pages/tool_tip.dart';
 import 'package:widgets_flutter_practise/pages/valume_slider.dart';
 
-void main() {
-  runApp(const MyApp());
+Future main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final showHome = prefs.getBool("showHome") ?? false;
+  runApp( MyApp(
+    showHome: showHome,
+  ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+  final bool showHome;
+
+  const MyApp({
+    super.key,
+    required this.showHome,
+});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +78,28 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyHeroAnimation()
+      home: showHome?  OnboardingHomePage() : MyOnBoardingScreen()
     );
   }
 }
+
+// void main(){
+//   runApp(const MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: "Flutter Widgets",
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         useMaterial3: true
+//       ),
+//       home: MyHeroAnimation(),
+//     );
+//   }
+// }
+
