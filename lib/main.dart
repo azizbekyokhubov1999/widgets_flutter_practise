@@ -16,6 +16,8 @@ import 'package:widgets_flutter_practise/pages/date_picker.dart';
 import 'package:widgets_flutter_practise/pages/dialog_widget.dart';
 import 'package:widgets_flutter_practise/pages/dropdown_button.dart';
 import 'package:widgets_flutter_practise/pages/gouge_chart.dart';
+import 'package:widgets_flutter_practise/pages/hero_animation.dart';
+import 'package:widgets_flutter_practise/pages/hero_detail.dart';
 import 'package:widgets_flutter_practise/pages/home_page.dart';
 import 'package:widgets_flutter_practise/pages/image_size.dart';
 import 'package:widgets_flutter_practise/pages/image_slider.dart';
@@ -63,7 +65,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: MyQrCodeReader()
+      home: MyHeroAnimation()
     );
   }
 }
