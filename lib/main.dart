@@ -24,6 +24,7 @@ import 'package:widgets_flutter_practise/pages/hero_detail.dart';
 import 'package:widgets_flutter_practise/pages/home_page.dart';
 import 'package:widgets_flutter_practise/pages/image_size.dart';
 import 'package:widgets_flutter_practise/pages/image_slider.dart';
+import 'package:widgets_flutter_practise/pages/liquid_swipe.dart';
 import 'package:widgets_flutter_practise/pages/lottie_animation.dart';
 import 'package:widgets_flutter_practise/pages/my_buttons.dart';
 import 'package:widgets_flutter_practise/pages/my_listview_page.dart';
@@ -106,7 +107,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true
       ),
-      home: MyCheckBoxListTile(),
+      home: MyLiquidSwipe(),
     );
   }
 }
