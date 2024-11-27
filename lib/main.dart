@@ -8,6 +8,7 @@ import 'package:widgets_flutter_practise/pages/bottom_nav_bar.dart';
 import 'package:widgets_flutter_practise/pages/calendar_table.dart';
 import 'package:widgets_flutter_practise/pages/card_widget.dart';
 import 'package:widgets_flutter_practise/pages/check_box.dart';
+import 'package:widgets_flutter_practise/pages/checkbox_list_tile.dart';
 import 'package:widgets_flutter_practise/pages/choice_chip.dart';
 import 'package:widgets_flutter_practise/pages/country_picker.dart';
 import 'package:widgets_flutter_practise/pages/curved_bnb.dart';
@@ -105,7 +106,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true
       ),
-      home: MyListViewPage(),
+      home: MyCheckBoxListTile(),
     );
   }
 }
